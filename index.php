@@ -18,3 +18,5 @@ match ($act) {
     // Trang chủ
     '/'                 => (new HomeController())->index(),
 };
+
+// code person2
