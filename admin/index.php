@@ -28,5 +28,5 @@ match ($act) {
 
 };
 
-require_once 'views/layouts/layouts_top.php';
+require_once 'views/layouts/layout_bottom.php';
 ?>
