@@ -1,3 +1,5 @@
+
+
 <?php 
 
 // Require file Common
@@ -16,9 +18,15 @@ $act = $_GET['act'] ?? '/';
 
 // Để bảo bảo tính chất chỉ gọi 1 hàm Controller để xử lý request thì mình sử dụng match
 
+require_once 'views/layouts/layouts_top.php';
+
 match ($act) {
     // Dashboards
     '/'                 => (new DashboardController())->index(),
-    'product-list' =>(new ProductController()) -> getAllProduct()
+    'product-list' =>(new ProductController()) -> getAllProduct(),
+    'product-add' =>(new ProductController()) -> addProduct()
 
 };
+
+require_once 'views/layouts/layouts_top.php';
+?>
